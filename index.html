@@ -6,17 +6,21 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
 <![endif]-->
 <style type="text/css">
-    html, body, #photo {
+    html, body,  {
+        
+    }
+    .container {
+        width: 690px;
+    }
+    #photo, #photo2 {
         width: 690px;
         height: 690px;
-        padding: 50;
-        margin: 50;
-        align-content: center;
     }
 </style>
 </head>
 <body>
 
+<div class="container">
 <h3>Pancreatic Ultrastructure</h3>
 <ul>
     <li><a href="http://pancreatic-ultrastructure.github.io/tuft-cell/tuftCell.html">Tuft cell</a></li>
@@ -35,7 +39,7 @@ var map = L.map('photo').setView(new L.LatLng(0,0), 0);
 L.tileLayer.zoomify('exocrine-pancreas-overview/BaSiC-processed-stitched-cropped/', {
     width: 37260,
     height: 14035,
-    tolerance: 0.8,
+    tolerance: 0.2,
     attribution: 'Exocrine pancreas overview'
 }).addTo(map);
 
@@ -44,23 +48,23 @@ L.tileLayer.zoomify('exocrine-pancreas-overview/BaSiC-processed-stitched-cropped
 Stuff after the thing... 
 
 
-<div id="photo"></div>
+<div id="photo2"></div>
 <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
 <script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>  
 <script type="text/javascript">
 
 
-var map = L.map('photo').setView(new L.LatLng(0,0), 0);
+var map = L.map('photo2').setView(new L.LatLng(0,0), 0);
 
 L.tileLayer.zoomify('tuft-cell/tuftCell/', {
-    width: 37260,
-    height: 14035,
-    tolerance: 0.8,
-    attribution: 'Exocrine pancreas overview'
+    width: 8192,
+    height: 8192,
+    tolerance: 0.5,
+    attribution: 'Tuft cell'
 }).addTo(map);
 
 </script>
 
-
+</div>
 </body>
 </html>
