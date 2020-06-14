@@ -40,6 +40,26 @@ L.tileLayer.zoomify('exocrine-pancreas-overview/BaSiC-processed-stitched-cropped
 
 </script>
 
+Stuff after the thing... 
+
+
+<div id="photo"></div>
+<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+<script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>  
+<script type="text/javascript">
+
+
+var map = L.map('photo').setView(new L.LatLng(0,0), 0);
+
+L.tileLayer.zoomify('tuft-cell/tuftCell/', {
+    width: 37260,
+    height: 14035,
+    tolerance: 0.8,
+    attribution: 'Exocrine pancreas overview'
+}).addTo(map);
+
+</script>
+
 
 </body>
 </html>
