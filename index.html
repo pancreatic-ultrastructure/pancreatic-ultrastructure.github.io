@@ -7,19 +7,24 @@
         
     }
     .container {
-        width: 690px;
+        left: 200px;
+        right: 200px;
     }
     #photo, #photo2 {
-        width: 690px;
-        height: 690px;
+        width: 569px;
+        height: 569px;
     }
 </style>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css"></link>
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css"></link>
+<![endif]-->
+<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+<script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>  
+
 </head>
 <body>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css"></link>
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css"></link>
-    <![endif]-->
+
 <div class="container">
 <h3>Pancreatic Ultrastructure</h3>
 <ul>
@@ -29,8 +34,6 @@
 
 
 <div id="photo"></div>
-<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
-<script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>  
 <script type="text/javascript">
 
 
@@ -45,8 +48,7 @@ L.tileLayer.zoomify('exocrine-pancreas-overview/BaSiC-processed-stitched-cropped
 
 </script>
 
-Stuff after the thing... 
-
+Tuft cell
 
 <div id="photo2"></div>
 <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
