@@ -3,10 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Pancreatic ultrastructure overview</title>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.css" />
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.ie.css" />
-    <![endif]-->
     <style type="text/css">
         html, body, #photo {
             width: 100%;
@@ -18,8 +14,13 @@
 </head>
 
 <body>
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/leaflet.ie.css" />
+    <![endif]-->
+    
     <div id="photo"></div>
-    <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+    <script src="js/leaflet.js"></script>
     <script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>  
     <script type="text/javascript">
 
