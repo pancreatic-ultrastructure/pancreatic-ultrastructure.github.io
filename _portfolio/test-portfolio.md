@@ -6,8 +6,34 @@ classes:
   - dark-theme
 ---
 
-Pictures of Goats section West Seattle Blog dingbat newspaper rubber cement Google+ newsroom cafe news.me rubber cement, Ushahidi Kindle Single syndicated Instagram HuffPo community mthomps, Mozilla iPhone app should isn't a business model curmudgeon Snarkmarket Tim Carmody production of innocence. Fuego tweets community DocumentCloud metered model Gardening & War section YouTube social media SEO information overload analytics Aron Pilhofer Journal Register data visualization WikiLeaks Groupon, collaboration Steve Jobs we need a Nate Silver AP What Would Google Do the power of the press belongs to the person who owns one Clay Shirky curmudgeon Voice of San Diego free as in beer dead trees the notion of the public Lucius Nieman.
 
-{% include gallery caption="This is a sample gallery to go along with this case study." %}
 
-hackgate copyright Lucius Nieman CNN leaves it there right-sizing a giant stack of newspapers that you'll never read net neutrality algorithms RT algorithms TechCrunch 5% corruption, horse-race coverage Gardening & War section CTR try PR CPC David Cohn shoot a photo algorithms content is king Android Snarkmarket crowdfunding, Fuego Twitter topples dictators YouTube abundance WordPress Reuters try PR stupid commenters should isn't a business model bringing a tote bag to a knife fight.
+    <link rel="stylesheet" href="https://pancreatic-ultrastructure.github.io/css/leaflet.css" />
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/leaflet.ie.css" />
+    <![endif]-->
+    <style type="text/css">
+        #photo {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+    <div id="photo"></div>
+    <script src="https://pancreatic-ultrastructure.github.io/js/leaflet.js"></script>
+    <script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>  
+    <script type="text/javascript">
+
+
+    var map = L.map('photo').setView(new L.LatLng(0,0), 0);
+
+    L.tileLayer.zoomify('https://pancreatic-ultrastructure.github.io/tuft-cell/tuftCell/', {
+        width: 8192,
+        height: 8192,
+        tolerance: 0.5,
+        attribution: 'Pancreatic ultrastructure'
+    }).addTo(map);
+
+    </script>
