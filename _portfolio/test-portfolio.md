@@ -1,9 +1,6 @@
 ---
-title: Test #2
-layout: splash
-classes:
-  - landing
-  - dark-theme
+title: Tuft cell
+layout: post
 ---
 
 <link rel="stylesheet" href="https://pancreatic-ultrastructure.github.io/css/leaflet.css" />
@@ -12,8 +9,8 @@ classes:
     <![endif]-->
 <style type="text/css">
         #photo {
-            width: 100%;
-            height: 100%;
+            width: 800px;
+            height: 500px;
             padding: 0;
             margin: 0;
         }
@@ -21,7 +18,7 @@ classes:
 
 <div id="photo"></div>
 <script src="https://pancreatic-ultrastructure.github.io/js/leaflet.js"></script>
-<script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>  
+<script type="text/javascript" src="https://pancreatic-ultrastructure.github.io/js/L.TileLayer.Zoomify.js"></script>  
 <script type="text/javascript">
 var map = L.map('photo').setView(new L.LatLng(0,0), 0);
 L.tileLayer.zoomify('https://pancreatic-ultrastructure.github.io/tuft-cell/tuftCell/', {
