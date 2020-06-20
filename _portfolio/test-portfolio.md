@@ -10,7 +10,7 @@ layout: post
 <style type="text/css">
         #photo {
             width: 800px;
-            height: 800px;
+            height: 450px;
             padding: 0;
             margin: 0;
         }
