@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -7,32 +8,57 @@
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/leaflet.ie.css" />
     <![endif]-->
-    <style type="text/css">
+<style type="text/css">
         html, body, #photo {
             width: 100%;
             height: 100%;
+            min-height: 100%;
             padding: 0;
             margin: 0;
         }
-    </style>
+        .row {
+            height:100vh;
+        }
+</style>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-<div id="photo"></div>
-<script src="https://pancreatic-ultrastructure.github.io/js/leaflet.js"></script>
-<script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>  
-<script type="text/javascript">
+<div class="container-fluid">
+<div class="row">
+<div class="col-3" style="background-color:#e4e4e4;">
+    <h1>Pancreatic tuft cell</h1>
+    <p>Note the long actin rootlets and nuclear-anchored lipid droplets.</p>
+    <a href="https://pancreatic-ultrastructure.github.io"><< Back</a>
+</div>
+<div class="col-9" style="background-color:#e4e4e4;">
 
-    var map = L.map('photo').setView(new L.LatLng(0,0), 0);
+    <div id="photo"></div>
+    <script src="https://pancreatic-ultrastructure.github.io/js/leaflet.js"></script>
+    <script type="text/javascript" src="L.TileLayer.Zoomify.js"></script>  
+    <script type="text/javascript">
+    
+        var map = L.map('photo').setView(new L.LatLng(0,0), 0);
+    
+        L.tileLayer.zoomify('https://pancreatic-ultrastructure.github.io/tuft-cell/tuftCell/', {
+            width: 8192,
+            height: 8192,
+            tolerance: 0.5,
+            attribution: 'Tuft cell ultrastructure'
+        }).addTo(map);
+    
+    </script>
 
-    L.tileLayer.zoomify('https://pancreatic-ultrastructure.github.io/tuft-cell/tuftCell/', {
-        width: 8192,
-        height: 8192,
-        tolerance: 0.5,
-        attribution: 'Pancreatic ultrastructure'
-    }).addTo(map);
-
-</script>
-
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
