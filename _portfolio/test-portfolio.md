@@ -9,8 +9,8 @@ layout: post
     <![endif]-->
 <style type="text/css">
         #photo {
-            width: 800px;
-            height: 450px;
+            width: 900px;
+            height: 650px;
             padding: 0;
             margin: 0;
         }
